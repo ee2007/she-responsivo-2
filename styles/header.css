@@ -3,6 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    }
+    
+    .cabecalho-menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    }
+    
+    .container-imagem{
+    padding: 1em;
     }
     
     .container {
@@ -12,6 +26,22 @@
     
     .cabecalho-titulo {
     display: none;
+    }
+    
+    .container-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    }
+    
+    .container-botao:checked~.container-menu {
+    display: block;
+    }
+
+    .menu-item, .menu-item-titulo {
+        padding: 1em;
+        background-color: var(--branco);
     }
     
     @media screen and (min-width: 1024px) {
