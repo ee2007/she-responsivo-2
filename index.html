@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alura Books</title>
 <link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-<link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com " >
+<link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap&quot; rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/&gt;
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css&quot; />
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="cabecalho">
@@ -44,21 +44,21 @@
 <h2 class="carrossel-titulo">últimos lançamentos</h2>
 <!-- Slider main container -->
 <div class="swiper">
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
 <!-- Additional required wrapper -->
 <div class="swiper-wrapper">
 <!-- Slides -->
-<div class="swiper-slide">img/Acessibilidade.svg</div>
-<div class="swiper-slide">img/Arquitetura.svg</div>
-<div class="swiper-slide">img/Compras.svg</div>
-<div class="swiper-slide">img/Favoritos.svg</div>
-<div class="swiper-slide">img/Gerstão2.svg</div>
-<div class="swiper-slide">img/Javascript.svg</div>
-<div class="swiper-slide">img/Liderança.svg</div>
-<div class="swiper-slide">img/Logo.svg</div>
-
+<div class="swiper-slide"><img src="img/Acessibilidade.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/Angular.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/Construct2.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/Gestão2.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/Guia Front-end.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/Liderança.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/MEAN.svg" alt=""></div>
+<div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt=""></div>
 </div>
-<!-- If we need pagination -->
-<div class="swiper-pagination"></div>
+
 
 <!-- If we need navigation buttons -->
 <div class="swiper-button-prev"></div>
@@ -67,29 +67,36 @@
 <!-- If we need scrollbar -->
 <div class="swiper-scrollbar"></div>
 </div>
-
+<div class="card">
+<div class="card-1">
+<div class="card-1-texto">
+<h3 class="card-titulo-1">Talvez você também se interesse por...</h3>
+<h2 class="card-titulo-2">Angular 11 e Firebase</h2>
+<p class="card-texto">Construindo uma aplicação integrada com a plataforma Google</p>
+</div>
+<img src="img/Card.svg" alt="">
+</div>
+<div class="card-2">
+<ul class="botões">
+<li class="botões-item"><img src="img/Favoritos.svg" alt=""></li>
+<li class="botões-item"><img src="img/Sacola.svg" alt=""></li>
+</ul>
+<a href="#">Saiba mais</a>
+</div>
+</div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script&gt;
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script>
+<script>
+const swiper = new Swiper('.swiper', {
+spaceBetween: 10,
+slidesPerView: 3,
+pagination: {
+el: '.swiper-pagination',
+type: 'bullets',
+},
+});
+</script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
